@@ -1,5 +1,19 @@
 # Git Wiki
 
+## Upstream
+
+Easiest way to set the upstream for a branch is:
+
+```
+git branch -u origin/my-branch
+```
+
+Where `-u` is short for `--set-upstream-to` and `my-branch` the name of the
+remote branch (often match name of local one).
+
+Setting the upstream allows to just type `git pull`, `git push` w/o specifying
+the remote(e.g origin) and the remote branch(e.g master) all the time.
+
 ## Resets 
 
 When you locally committed to the wrong branch, use `git reset HEAD^` to revert
