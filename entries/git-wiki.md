@@ -30,6 +30,30 @@ Remove all files in the target directory from the git repository.
 git rm --cached target/\*
 ```
 
+### Reset to head
+
+To hard reset a single file to HEAD:
+
+```
+git checkout @ -- myfile.ext
+```
+
+Note that @ is short for HEAD. An older version of git may not support the short
+form.
+
+### Reset to index
+
+To hard reset a single file to the index, assuming the index is non-empty,
+otherwise to HEAD:
+
+```
+git checkout -- myfile.ext
+```
+
+The point is that to be safe, you don't want to leave out @ or HEAD from the
+command unless you specifically mean to reset to the index only.
+
+
 ## Branch information
 
 ### Current branch
