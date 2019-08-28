@@ -5,25 +5,23 @@
 ### Jump to notebook folder
 
 ```
-note c
+notes f
 ```
 
-### List notes
+### Go to vimwiki
 
 ```
-note l
+notes i
 ```
 
-### Commit and push nots to git
+### Persist note in git and Dropbox
 
 ```
-note p
+notes p
 ```
 
-### Create a notebook entry
+### Persist note in Dropbox
 
 ```
-note my-awesome-note
+notes s
 ```
-
-Where `my-awesome-note` is the name of the note.
